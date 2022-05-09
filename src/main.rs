@@ -11,13 +11,8 @@ fn main() {
 
     let y = "5";
     let y: Option<i32> = y.parse().ok();
-    match y {
-        Some(v) => {
-            println!("y = {}", v);
-        }
-        None => {
-            println!("ERR: Couldn't convert.");
-        }
+    if let Some(v) = y {
+        println!("y = {}", v);
     }
 }
 
