@@ -11,7 +11,14 @@ fn main() {
 
     let y = "5";
     let y: Result<i32, _> = y.parse();
-    println!("y = {:?}", y);
+    match y {
+        Ok(v) => {
+            println!("y = {}", v);
+        }
+        Err(_) => {
+            println!("ERR: Couldn't convert.");
+        }
+    }
 }
 
 fn use_string(s: &str) {
