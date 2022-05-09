@@ -11,13 +11,8 @@ fn main() {
 
     let y = "5";
     let y: Result<i32, _> = y.parse();
-    match y {
-        Ok(v) => {
-            println!("y = {}", v);
-        }
-        Err(_) => {
-            println!("ERR: Couldn't convert.");
-        }
+    if let Ok(v) = y {
+        println!("y = {}", v);
     }
 }
 
