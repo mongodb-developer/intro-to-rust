@@ -1,4 +1,6 @@
 fn main() {
-    let whom = "World";
+    let mut whom = "World";
     println!("Hello, {whom}!");
+    whom = "Planet";
+    println!("Bye, {whom}!");
 }
