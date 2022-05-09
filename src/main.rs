@@ -6,6 +6,10 @@ fn main() {
 
     // Allocated in the stack
     let x = String::from("This is not a &str");
-    let y = x;
-    println!("x = {x}, y = {y}");
+    use_string(x);
+    println!("x = {x}");
+}
+
+fn use_string(s: String) {
+    println!("Inside use_string(): s = {s}");
 }
