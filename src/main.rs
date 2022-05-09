@@ -10,9 +10,14 @@ fn main() {
     println!("x = {x}");
 
     let y = "5";
-    let y: Result<i32, _> = y.parse();
-    if let Ok(v) = y {
-        println!("y = {}", v);
+    let y: Option<i32> = y.parse().ok();
+    match y {
+        Some(v) => {
+            println!("y = {}", v);
+        }
+        None => {
+            println!("ERR: Couldn't convert.");
+        }
     }
 }
 
