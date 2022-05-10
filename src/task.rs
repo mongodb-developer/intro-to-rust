@@ -1,2 +1,5 @@
 #[derive(Debug)]
-pub struct Task(pub String, pub bool);
+pub struct Task {
+    pub name: String,
+    pub done: bool,
+}
