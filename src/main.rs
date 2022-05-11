@@ -1,8 +1,10 @@
 mod task;
 mod in_memory_task_repo;
+mod task_repo;
 
 use chrono::Utc;
 use in_memory_task_repo::InMemoryTaskRepo;
+use task_repo::TaskRepo;
 use task::Task;
 
 fn main() {
