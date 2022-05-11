@@ -16,4 +16,5 @@ fn main() {
     repo.add(Task::new("Prepare dinner".to_string(), Some(Utc::today().naive_local()), false));
 
     println!("Tasks in repo: {:#?}", repo.list());
+    println!("Tasks in repo: {repo}");
 }
