@@ -2,7 +2,17 @@
 
 ## This Repo
 
-This repository contains code for a intro to Rust and to microservices written in Rust.
+This repository contains code for a intro to [Rust](https://www.rust-lang.org/) and to microservices written in Rust. You'll find code to create a simple model for [Tasks](src/task.rs) and a [Repository](src/in_memory_task_repo.rs) to store/read these Tasks
+
+## How to use it
+
+Each commit in this repo is a new step towards the building of the final example. Clone this repo and checkout the initial commit. Then just read [each commit description](commits/main) and look at the changes.
+
+## Resources for Rust Learning
+
+- [The Rust Programming Language Book, by Steve Klabnik and Carol Nichols, with contributions from the Rust Community](https://doc.rust-lang.org/stable/book/title-page.html)
+- [The Cargo Book](https://doc.rust-lang.org/cargo/)
+- [Rust Videos from Jon Gjengset](https://www.youtube.com/c/JonGjengset)
 
 ## License
 
